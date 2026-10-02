@@ -1,8 +1,9 @@
 #Multiplicacion de matrices 2x2
+n = int(input("Ingrese el tamaño de las matrices: "))
 matrizA = []
 matrizB = []
 matrizC = []
-print("Ingrese los valores de la primera matriz (2x2):")
+print("Ingrese los valores de la primera matriz ({n}x{n}):")
 for i in range(2):
     fila = []
     for j in range(2):
@@ -10,15 +11,15 @@ for i in range(2):
        fila.append(valor)
     matrizA.append(fila)
 
-    print("Ingrese los valores de la segunda matriz (2x2):")
+    print("Ingrese los valores de la segunda matriz ({n}x{n}):")
 for i in range(2):
     fila = []
     for j in range(2):
        valor = int(input(f"Ingrese el valor para la posición [{i+1}][{j+1}]: "))
        fila.append(valor)
     matrizB.append(fila)
-
-    #Multiplicacion de matrices
+    
+#Multiplicacion de matrices
 for i in range(2):
     fila = []
     for j in range(2):
